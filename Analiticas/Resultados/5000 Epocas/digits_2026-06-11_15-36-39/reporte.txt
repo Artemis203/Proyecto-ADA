@@ -1,0 +1,52 @@
+Reporte de entrenamiento
+----------------------------------------
+Dataset: digits
+Tipo de input: Tabla (UCI / sklearn)
+Fecha: 2026-06-11
+Hora: 15-36-39
+Épocas: 5000
+Batch size: 32
+Learning rate: 0.005
+Dataset: digits
+Input size: 64
+Output size: 10
+Arquitectura: 64 -> 32 -> 10
+
+Complejidad: Sin optimización
+Método: BASELINE
+Accuracy máxima : 1.0000
+Loss mínima     : 0.0959
+Tiempo promedio : 0.0074s
+Complejidad     : Sin optimización
+
+Complejidad: O(n log k)
+Método: HEAP
+Accuracy máxima : 1.0000
+Loss mínima     : 0.0170
+Tiempo promedio : 0.0099s
+Complejidad     : O(n log k)
+
+Complejidad: O(n log n)
+Método: SORT
+Accuracy máxima : 1.0000
+Loss mínima     : 0.0169
+Tiempo promedio : 0.0094s
+Complejidad     : O(n log n)
+
+Complejidad: O(n) promedio / O(n²) peor caso
+Método: QUICK
+Accuracy máxima : 1.0000
+Loss mínima     : 0.0192
+Tiempo promedio : 0.0099s
+Complejidad     : O(n) promedio / O(n²) peor caso
+
+Mejores métodos
+----------------------------------------
+Mayor accuracy: BASELINE (1.0000)
+Más rápido: BASELINE (0.0074s)
+
+Diferencias
+----------------------------------------
+HEAP fue -34.54% más rápido que baseline
+SORT fue -27.46% más rápido que baseline
+QUICK fue -34.48% más rápido que baseline

@@ -1,0 +1,52 @@
+Reporte de entrenamiento
+----------------------------------------
+Dataset: mnist
+Tipo de input: Desconocido
+Fecha: 2026-06-11
+Hora: 15-32-30
+Épocas: 1000
+Batch size: 32
+Learning rate: 0.005
+Dataset: mnist
+Input size: 784
+Output size: 10
+Arquitectura: 784 -> 32 -> 10
+
+Complejidad: Sin optimización
+Método: BASELINE
+Accuracy máxima : 1.0000
+Loss mínima     : 0.0763
+Tiempo promedio : 0.1646s
+Complejidad     : Sin optimización
+
+Complejidad: O(n log k)
+Método: HEAP
+Accuracy máxima : 1.0000
+Loss mínima     : 0.0190
+Tiempo promedio : 0.2345s
+Complejidad     : O(n log k)
+
+Complejidad: O(n log n)
+Método: SORT
+Accuracy máxima : 1.0000
+Loss mínima     : 0.0188
+Tiempo promedio : 0.1666s
+Complejidad     : O(n log n)
+
+Complejidad: O(n) promedio / O(n²) peor caso
+Método: QUICK
+Accuracy máxima : 1.0000
+Loss mínima     : 0.0151
+Tiempo promedio : 0.1717s
+Complejidad     : O(n) promedio / O(n²) peor caso
+
+Mejores métodos
+----------------------------------------
+Mayor accuracy: BASELINE (1.0000)
+Más rápido: BASELINE (0.1646s)
+
+Diferencias
+----------------------------------------
+HEAP fue -42.47% más rápido que baseline
+SORT fue -1.25% más rápido que baseline
+QUICK fue -4.33% más rápido que baseline

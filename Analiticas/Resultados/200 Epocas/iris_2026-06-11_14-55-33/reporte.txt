@@ -1,0 +1,52 @@
+Reporte de entrenamiento
+----------------------------------------
+Dataset: iris
+Tipo de input: Tabla (UCI / sklearn)
+Fecha: 2026-06-11
+Hora: 14-55-33
+Épocas: 200
+Batch size: 32
+Learning rate: 0.005
+Dataset: iris
+Input size: 4
+Output size: 3
+Arquitectura: 4 -> 32 -> 3
+
+Complejidad: Sin optimización
+Método: BASELINE
+Accuracy máxima : 0.9333
+Loss mínima     : 16.1078
+Tiempo promedio : 0.0018s
+Complejidad     : Sin optimización
+
+Complejidad: O(n log k)
+Método: HEAP
+Accuracy máxima : 0.9583
+Loss mínima     : 4.0700
+Tiempo promedio : 0.0014s
+Complejidad     : O(n log k)
+
+Complejidad: O(n log n)
+Método: SORT
+Accuracy máxima : 0.9833
+Loss mínima     : 4.7660
+Tiempo promedio : 0.0009s
+Complejidad     : O(n log n)
+
+Complejidad: O(n) promedio / O(n²) peor caso
+Método: QUICK
+Accuracy máxima : 0.9750
+Loss mínima     : 6.0844
+Tiempo promedio : 0.0008s
+Complejidad     : O(n) promedio / O(n²) peor caso
+
+Mejores métodos
+----------------------------------------
+Mayor accuracy: SORT (0.9833)
+Más rápido: QUICK (0.0008s)
+
+Diferencias
+----------------------------------------
+HEAP fue 17.82% más rápido que baseline
+SORT fue 50.31% más rápido que baseline
+QUICK fue 53.35% más rápido que baseline

@@ -1,0 +1,52 @@
+Reporte de entrenamiento
+----------------------------------------
+Dataset: wine
+Tipo de input: Tabla (UCI / sklearn)
+Fecha: 2026-06-11
+Hora: 14-55-48
+Épocas: 200
+Batch size: 32
+Learning rate: 0.005
+Dataset: wine
+Input size: 13
+Output size: 3
+Arquitectura: 13 -> 32 -> 3
+
+Complejidad: Sin optimización
+Método: BASELINE
+Accuracy máxima : 0.6479
+Loss mínima     : 26.1272
+Tiempo promedio : 0.0008s
+Complejidad     : Sin optimización
+
+Complejidad: O(n log k)
+Método: HEAP
+Accuracy máxima : 0.6620
+Loss mínima     : 7.1513
+Tiempo promedio : 0.0018s
+Complejidad     : O(n log k)
+
+Complejidad: O(n log n)
+Método: SORT
+Accuracy máxima : 0.6690
+Loss mínima     : 6.8364
+Tiempo promedio : 0.0011s
+Complejidad     : O(n log n)
+
+Complejidad: O(n) promedio / O(n²) peor caso
+Método: QUICK
+Accuracy máxima : 0.7958
+Loss mínima     : 8.7476
+Tiempo promedio : 0.0010s
+Complejidad     : O(n) promedio / O(n²) peor caso
+
+Mejores métodos
+----------------------------------------
+Mayor accuracy: QUICK (0.7958)
+Más rápido: BASELINE (0.0008s)
+
+Diferencias
+----------------------------------------
+HEAP fue -119.44% más rápido que baseline
+SORT fue -32.33% más rápido que baseline
+QUICK fue -30.10% más rápido que baseline

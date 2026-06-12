@@ -1,0 +1,10 @@
+numpy
+scikit-learn
+matplotlib
+python-telegram-bot
+python-dotenv
+requests
+pandas
+Pillow
+psutil
+scipy
